@@ -4,7 +4,7 @@ const bodyParser = require("body-parser");
 const morgan = require("morgan");
 const routes = require("./routes/index.js");
 const cors = require("cors");
-const whitelist = [FRONT_URL];
+const whitelist = [process.env.FRONT_URL];
 require("./db.js");
 
 const server = express();
